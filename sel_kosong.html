@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sel Kosong</title>
+</head>
+<style>
+    table.table1{
+        empty-cells: hide;
+    }
+    table.table2{
+        empty-cells: hide;
+    }
+</style>
+<body>
+    <h2>Table dengan cell kosong yang tidak memiliki border</h2>
+    <table border="1" class="table1">
+        <tr>
+            <td>Teks</td>
+            <td>Teks</td>
+        </tr>
+        <tr>
+            <!-- menggunakan spasi biasa -->
+            <td> </td>
+            <td>Teks</td>
+        </tr>
+    </table>
+
+    <h2>Table dengan cell kosong yang memiliki border</h2>
+    <table border="1" class="table2">
+        <tr>
+            <td>Teks</td>
+            <td>Teks</td>
+        </tr>
+        <tr>
+            <!-- menggunakan entitas karakter -->
+            <td>&nbsp;</td>
+            <td>Teks</td>
+        </tr>
+    </table>
+</body>
+</html>
